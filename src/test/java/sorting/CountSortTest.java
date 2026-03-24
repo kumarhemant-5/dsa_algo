@@ -1,8 +1,6 @@
 package sorting;
 
 import com.sorting.CountSort;
-import com.sorting.CountSort;
-import com.sorting.MergeSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -122,7 +120,7 @@ public class CountSortTest {
     @Test
     void testCountSortWithFiveLakhElements() {
 
-        int[] arr = new Random().ints(200000, -200000, 200000).toArray();
+        int[] arr = new Random().ints(200000000, 0, 200000000).toArray();
         int[] expected = arr.clone();
         long time1 = System.currentTimeMillis();
         Arrays.sort(expected);
